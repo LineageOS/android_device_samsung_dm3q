@@ -19,7 +19,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Display config (stock DDC renamed to live unique display id)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947059332006275.xml
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947093241269891.xml
 
 # FlipFlap
 PRODUCT_PACKAGES += \
@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.dm1q.rc
+    init.dm3q.rc
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -35,17 +35,20 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureResDm1q \
-    FlipFlapResDm1q \
-    FrameworksResDm1q \
-    LineageResDm1q \
-    SettingsProviderResDm1q \
-    SystemUIResDm1q \
-    WifiResTargetDm1q
+    ApertureResDm3q \
+    FlipFlapResDm3q \
+    FrameworksResDm3q \
+    LineageResDm3q \
+    SettingsProviderResDm3q \
+    SystemUIResDm3q \
+    WifiResTargetDm3q
 
 # Power
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# SPen
+TARGET_HAS_SPEN := true
 
 # Touch features
 PRODUCT_PACKAGES += \
@@ -61,4 +64,5 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/samsung/sm8550-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/samsung/dm1q/dm1q-vendor.mk)
+$(call inherit-product, vendor/samsung/dm3q/dm3q-vendor.mk)
+

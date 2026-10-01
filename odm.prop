@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=Galaxy S23
+bluetooth.device.default_name=Galaxy S23 Ultra
 
 # USB
-vendor.usb.product_string=Galaxy S23
+vendor.usb.product_string=Galaxy S23 Ultra
