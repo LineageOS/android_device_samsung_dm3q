@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FlipFlapResDm1q",
+    name: "FlipFlapResDm3q",
     device_specific: true,
 }
