@@ -1,5 +1,5 @@
-# All unpinned blobs are extracted from S911BXXS8EZA1
-# All pinned blobs are extracted from S9110ZCS6EZA1
+# All unpinned blobs are extracted from S918BXXS8EZA1
+# All pinned blobs are extracted from S9180ZHS6EZA1
 
 # ACDB
 vendor/etc/audconf/OPEN/acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/acdb_cal.acdb
@@ -78,14 +78,13 @@ vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Bluetooth firmware
 vendor/firmware/bt_nvm_loading.xml
-vendor/firmware/bt_nvm_loading_2nd.xml
 
 # Camera
 vendor/etc/sensors/config/kailua_irq.json
 vendor/etc/sensors/config/kailua_lps22hh_0.json
 vendor/etc/sensors/config/kailua_lsm6dso_0_0.json
+vendor/etc/sensors/config/kailua_lsm6dso_0_8.json
 vendor/etc/sensors/config/lsm6dso_0.json
-vendor/lib64/SWPD_libTsAf_3K1_TELE.so;FIX_SONAME
 vendor/lib64/camera/com.samsung.ois.mcu_stm32g.so
 vendor/lib64/camera/com.samsung.sensor.hi1337.so
 vendor/lib64/camera/com.samsung.sensor.hi847.so
@@ -100,15 +99,17 @@ vendor/lib64/camera/com.samsung.sensor.s5k3k1.so
 vendor/lib64/camera/com.samsung.sensor.s5k3lu.so
 vendor/lib64/camera/com.samsung.sensor.s5kgn3.so
 vendor/lib64/camera/com.samsung.sensor.s5khp2.so
-vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgn3.bin
+vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5khp2.bin
 vendor/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin
 vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin
 vendor/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin
-vendor/lib64/camera/com.samsung.sensormodule.3_lsi_s5k3k1.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5k3k1.bin
+vendor/lib64/camera/com.samsung.sensormodule.3_sony_imx754_x3.bin
+vendor/lib64/camera/com.samsung.sensormodule.6_sony_imx754_x10.bin
 vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5kgn3.bin
+vendor/lib64/camera/com.samsung.tuned.lsi_s5khp2.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin
+vendor/lib64/camera/com.samsung.tuned.sony_imx754_x10.bin
+vendor/lib64/camera/com.samsung.tuned.sony_imx754_x3.bin
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
 vendor/lib64/camera/components/com.qti.hvx.addconstant.so
@@ -180,7 +181,7 @@ vendor/lib64/camera/components/com.ss.stats.af.so
 vendor/lib64/camera/components/com.ss.stats.awb.so
 vendor/lib64/camera/components/com.ss.stats.pdlib.so
 vendor/lib64/camera/components/libTsAeFront_dm3.so;FIX_SONAME
-vendor/lib64/camera/components/libTsAe_dm2.so;FIX_SONAME
+vendor/lib64/camera/components/libTsAe_dm3.so;FIX_SONAME
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 vendor/lib64/camera/t_t10_dual_calibration.bin
 vendor/lib64/camera/uw_dual_calibration.bin
@@ -222,9 +223,11 @@ vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libSWNDFilterPreview.camera.samsung.so
+vendor/lib64/libPdSdCore.so
+vendor/lib64/libSWB.camera.samsung.so
 vendor/lib64/libTsAf_DM123Q.so;FIX_SONAME
-vendor/lib64/libTsAwbFront_DM2.so
-vendor/lib64/libTsAwb_DM2.so
+vendor/lib64/libTsAwbFront_DM3.so
+vendor/lib64/libTsAwb_DM3.so
 vendor/lib64/libUniScaler.uniplugin@1.0.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -234,11 +237,11 @@ vendor/lib64/libchifeature2.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libhypermotion_interface.so
 vendor/lib64/libndfilter_preview.uniplugin@1.0.so
+vendor/lib64/libmulticam_image_optical_zoom.so
+vendor/lib64/libmulticam_optical_zoom_control.so
+vendor/lib64/libmulticam_video_optical_zoom.so
+vendor/lib64/libswb_interface.so
 vendor/lib64/libthirdparty_zoomtranslator_imp.so
-vendor/lib64/libtriplecam_image_optical_zoom.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
-vendor/lib64/libvdis.uniplugin@1.0.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
@@ -266,13 +269,13 @@ vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
 vendor/firmware/CAMERA_ICP_170.elf
-vendor/firmware/CAMERA_ICP.b20:odm/firmware/CAMERA_ICP.b20|d09f0b72cb46ad18f6e7be4804dc8c19928f1aa5
-vendor/firmware/CAMERA_ICP.mbn:odm/firmware/CAMERA_ICP.mbn|97e4b37865972cd7bed3d4c58bcb39410a11cebe
-vendor/firmware/CAMERA_ICP.mdt:odm/firmware/CAMERA_ICP.mdt|97b96dad396e963603899515327af8e12d5ff680
+vendor/firmware/CAMERA_ICP.b20:odm/firmware/CAMERA_ICP.b20|ebdc72de2ac3e6d28ab6ccea71732177551059fc
+vendor/firmware/CAMERA_ICP.mbn:odm/firmware/CAMERA_ICP.mbn|71e75f81e683ae69931c50df6f9cd069fe02a1e9
+vendor/firmware/CAMERA_ICP.mdt:odm/firmware/CAMERA_ICP.mdt|53d12ed8426c1acfdf6e4e5145c4065c3cf31db6
+vendor/firmware/ois_mcu_stm32g_fw.bin
 
 # Display calibration data
-vendor/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json
-vendor/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json
+vendor/etc/display/qdcm_calib_data_DM3_S6E3HAE_AMB681AZ01.json
 
 # EVA firmware
 vendor/firmware/evass.b00
@@ -297,9 +300,10 @@ vendor/firmware/evass.b18
 vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
-vendor/firmware/evass.b19:odm/firmware/evass.b19|02cdcbf55f011b75a3e98cdb143c400d301eae84
-vendor/firmware/evass.mbn:odm/firmware/evass.mbn|2cebfa793a843e6bfef48bad0cc46a4d63e54141
-vendor/firmware/evass.mdt:odm/firmware/evass.mdt|57dfe9111b16f90a70fd48a8c5d16e09dec0137d
+vendor/firmware/evass.b19:odm/firmware/evass.b19|c04b360716a665f1d65542cd3d5ecc56023fdc01
+vendor/firmware/evass.mbn:odm/firmware/evass.mbn|61b4794405796e14d7e261e0881a7d7e7626283a
+vendor/firmware/evass.mdt:odm/firmware/evass.mdt|a41956c0dbcbb35fc379a5e03fa5b64836da51c6
+vendor/firmware/DM3_S6E3HAE_AMB681AZ01.dat
 
 # Fingerprint
 vendor/lib64/libsfp_sensor.so
@@ -315,9 +319,9 @@ vendor/firmware/a740_zap.b02
 vendor/firmware/a740_zap.mbn
 vendor/firmware/a740_zap.mdt
 vendor/firmware/gmu_gen70200.bin
-vendor/firmware/a740_zap.b02:odm/firmware/a740_zap.b02|cbb723f5b9c39c315dfe292134c59db5c7db05c5
-vendor/firmware/a740_zap.mbn:odm/firmware/a740_zap.mbn|d093fc67ffd7f8fdd4eed30d5900c408f6607415
-vendor/firmware/a740_zap.mdt:odm/firmware/a740_zap.mdt|d3dd54d675ca2b31545e281c4c258e7885dc7954
+vendor/firmware/a740_zap.b02:odm/firmware/a740_zap.b02|7de15038ea166f1d743fb2ad1c974eee4736d72a
+vendor/firmware/a740_zap.mbn:odm/firmware/a740_zap.mbn|26b968b14cdc9c951cdcd38c5db1f7fd98950112
+vendor/firmware/a740_zap.mdt:odm/firmware/a740_zap.mdt|04fd54ea537a6ce32d4ddba5ecd7c369fa1d4acb
 
 # Media
 vendor/lib64/libqc2audio_hwaudiocodec.so
@@ -325,12 +329,12 @@ vendor/lib64/libqc2audio_hwaudiocodec.so
 # NFC
 vendor/etc/nfc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
-# RIL - from dm1qxxx-user 15 AP3A.240905.015.A2 S911BXXS8DYG5 release-keys
-vendor/bin/qms|973813023511d3c65808f2e3b012d7291d229f9c
-vendor/etc/init/init.vendor.onebinary.rc|b3fab964774039b1f2f6eabf821556919b26369f
-vendor/etc/init/init.vendor.rilcommon.rc|5b86e50d77fb8b83ef0c22afe2d06e0fac5dd626
-vendor/etc/init/vendor.samsung.rilchip.qcom.rc|d02a6cec38528f577a8c13e902e426470c84458e
-vendor/etc/init/vendor.samsung.rild.rc|a4cc7e6d99aa026b4dc438d73b260d4143ae26b6
+# RIL
+vendor/bin/qms
+vendor/etc/init/init.vendor.onebinary.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/etc/init/vendor.samsung.rilchip.qcom.rc
+vendor/etc/init/vendor.samsung.rild.rc
 
 # Sensors config
 vendor/etc/sensors/config/sns_gyro_cal.json
@@ -340,6 +344,8 @@ vendor/etc/sensors/config/kailua_ak991x_3.json
 vendor/etc/sensors/config/kailua_ak991x_8.json
 vendor/etc/sensors/config/kailua_lsm6dso_0_1.json
 vendor/etc/sensors/config/kailua_stk3a9x_0.json
+vendor/etc/sensors/config/kailua_tmd4913_2.json
+vendor/etc/sensors/config/lsm6dso_0.json
 
 # Sensors
 vendor/bin/factory.ssc
@@ -351,28 +357,20 @@ vendor/lib64/sensors.ssc.so
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 
 # Touchscreen firmware
-vendor/firmware/tsp_stm/fts2ba61y_dm1q.bin
-vendor/firmware/tsp_stm/fts2ba61y_dm1q_boe.bin
+vendor/firmware/tsp_stm/fts2ba61y_dm3q.bin
 
 # Vendor firmware
-vendor/firmware/DM1_LX83118_CM002.dat
-vendor/firmware/DM1_S6E3FAC_AMB606AW01.dat
-vendor/firmware/hpbtfw21.tlv
-vendor/firmware/hpnv21.b9a
-vendor/firmware/hpnv21.b9b
-vendor/firmware/hpnv21.baa
-vendor/firmware/hpnv21.bb7
-vendor/firmware/hpnv21.bb9
-vendor/firmware/hpnv21.bin
-vendor/firmware/hpnv21g.b9a
-vendor/firmware/hpnv21g.b9b
-vendor/firmware/hpnv21g.baa
-vendor/firmware/hpnv21g.bb7
-vendor/firmware/hpnv21g.bb9
-vendor/firmware/hpnv21g.bin
+vendor/firmware/00_generic_xtalk_shape.bin
+vendor/firmware/hmtbtfw20.tlv
+vendor/firmware/hmtnv20.b21
+vendor/firmware/hmtnv20.bin
 vendor/firmware/mfc/mfc_fw_flash.bin
 vendor/firmware/mfc/mfc_fw_flash_cps4038.bin
-vendor/firmware/ois_mcu_stm32g_fw.bin
+vendor/firmware/vl53l8.bin
+vendor/firmware/wez02_dm3_c0.bin
+vendor/firmware/wez02_dm3_c1.bin
+vendor/firmware/wez02_dm3_c2.bin
+vendor/firmware/wez02_dm3_c3.bin
 
 # VPU firmware
 vendor/firmware/vpu20_4v.mbn
@@ -383,18 +381,15 @@ vendor/firmware/vpu30_4v_16mb_unsigned.mbn
 vendor/firmware/vpu30_4v_unsigned.mbn
 vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
-vendor/firmware/vpu30_4v.mbn:odm/firmware/vpu30_4v.mbn|5f2edb21e3cbbe4a51273f5006c6838d717808c4
+vendor/firmware/vpu30_4v.mbn:odm/firmware/vpu30_4v.mbn|fde40f7c99c34699b94ae5fde92bc68e035c8ed5
 
 # Wifi firmware
 vendor/firmware/Data.msc
-vendor/firmware/qca6490/amss20.bin
-vendor/firmware/qca6490/bdwlan.elf
-vendor/firmware/qca6490/bdwlan.elf1
-vendor/firmware/qca6490/bdwlan.elf10
-vendor/firmware/qca6490/bdwlan.elf2
-vendor/firmware/qca6490/bdwlang.elf
-vendor/firmware/qca6490/bdwlang.elf1
-vendor/firmware/qca6490/bdwlang.elf10
-vendor/firmware/qca6490/bdwlang.elf2
-vendor/firmware/qca6490/m3.bin
-vendor/firmware/qca6490/regdb.bin
+vendor/firmware/kiwi/amss20.bin
+vendor/firmware/kiwi/bdwlan.elf
+vendor/firmware/kiwi/bdwlan.elf1
+vendor/firmware/kiwi/bdwlan.elf10
+vendor/firmware/kiwi/bdwlan.elf2
+vendor/firmware/kiwi/phy_ucode20.elf
+vendor/firmware/kiwi/qdss_trace_config_v2.cfg
+vendor/firmware/kiwi/regdb.bin
