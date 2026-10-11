@@ -76,6 +76,37 @@ on boot
     write /proc/sys/vm/swappiness 130
     write /sys/module/zram/parameters/zram_balance_ratio 0
 
+# [ Permissions for Range Sensor Sensor
+# Range Sensor
+    chown system radio /sys/class/sensors/range_sensor/ambient
+    chown system radio /sys/class/sensors/range_sensor/cal01
+    chown system radio /sys/class/sensors/range_sensor/cal02
+    chown system radio /sys/class/sensors/range_sensor/cal_uid
+    chown system radio /sys/class/sensors/range_sensor/open_calibration
+    chown system radio /sys/class/sensors/range_sensor/calibration
+    chown system radio /sys/class/sensors/range_sensor/enable
+    chown system radio /sys/class/sensors/range_sensor/frame_rate
+    chown system radio /sys/class/sensors/range_sensor/fw_version
+    chown system radio /sys/class/sensors/range_sensor/mode
+    chown system radio /sys/class/sensors/range_sensor/name
+    chown system radio /sys/class/sensors/range_sensor/range_sigma
+    chown system radio /sys/class/sensors/range_sensor/status
+    chown system radio /sys/class/sensors/range_sensor/target_status
+    chown system radio /sys/class/sensors/range_sensor/temp
+    chown system radio /sys/class/sensors/range_sensor/test01
+    chown system radio /sys/class/sensors/range_sensor/test02
+    chown system radio /sys/class/sensors/range_sensor/test03
+    chown system radio /sys/class/sensors/range_sensor/test_mode
+    chown system radio /sys/class/sensors/range_sensor/uid
+    chown system radio /sys/class/sensors/range_sensor/vendor
+    chown system radio /sys/class/sensors/range_sensor/zone
+    chown system radio /sys/class/sensors/range_sensor/file_cal
+    chown system radio /sys/class/sensors/range_sensor/file_p2p
+    chown system radio /sys/class/sensors/range_sensor/file_shape
+    chown system radio /sys/class/sensors/range_sensor/interrupt
+    chown system radio /sys/class/sensors/range_sensor/error
+# ] Permissions for Range Sensor
+
 on shutdown
 
 # service definition
@@ -90,6 +121,21 @@ on post-fs
 
     #permission for cache reclaim feature
     chown system system /proc/proc_caches_reclaim
+
+# For Range Sensor
+    chmod 0660 /dev/range_sensor
+    chown system system /dev/range_sensor
+    mkdir /efs/range_sensor 0770 system system
+    chown system system /efs/range_sensor/cal_data.bin
+    chmod 0660 /efs/range_sensor/cal_data.bin
+    chown system system /efs/range_sensor/vl53l5_cal_shape.bin
+    chmod 0660 /efs/range_sensor/vl53l5_cal_shape.bin
+    chown system system /efs/range_sensor/vl53l5_cal_p2p.bin
+    chmod 0660 /efs/range_sensor/vl53l5_cal_p2p.bin
+
+# Range Sensor
+on property:sys.boot_completed=1
+	write /sys/class/sensors/range_sensor/calibration 0
 
 # Pageboostd
 on property:sys.boot_completed=1
