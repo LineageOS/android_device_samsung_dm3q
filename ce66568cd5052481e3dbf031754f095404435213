@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3163afe1_314ab1a6",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 34512
+      },
+      "writtenOn": "2026-10-12T15:35:14Z",
+      "side": 1,
+      "message": "```suggestion\n    FlipFlapResDm3q \\\n```",
+      "revId": "ce66568cd5052481e3dbf031754f095404435213",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
