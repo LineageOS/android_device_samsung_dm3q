@@ -323,6 +323,7 @@ vendor/firmware/a740_zap.mbn:odm/firmware/a740_zap.mbn|26b968b14cdc9c951cdcd38c5
 vendor/firmware/a740_zap.mdt:odm/firmware/a740_zap.mdt|04fd54ea537a6ce32d4ddba5ecd7c369fa1d4acb
 
 # Media
+vendor/etc/media_profiles_V1_0.xml
 vendor/lib64/libqc2audio_hwaudiocodec.so
 
 # NFC
