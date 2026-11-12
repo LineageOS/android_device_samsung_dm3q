@@ -4,6 +4,9 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
+    <bool name="config_wifiSoftapAcsIncludeDfs" translatable="false">false</bool>
+
     <!-- Do not translate. Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Galaxy S23 Ultra</string>
 </resources>
